@@ -1,0 +1,91 @@
+// Layout and grids
+$content-width: 1170px;
+$on-palm: 600px;
+
+// Fonts and sizes
+$font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+:root {
+	--primary-color: #166534;
+	--secondary-color: #666666;
+	--accent-color: #16a34a;
+	--accent-button-color: #14532d;
+	--font-color: #1a1a1a;
+	--font-highlight: #16a34a;
+	--bg-color: white;
+	--hero-bg-color: #f0f9f4;
+	--heading-color: white;
+	--footer-color: white;
+	--footer-bg-color: #14532d;
+	--footer-social-color: black;
+	--footer-social-circle-color: #166534;
+	--toggler-icon-color: #000000;
+	--pagination-button-bg-color: #E5E4E2;
+	--skeleton-base: #e2e3e4;
+	--skeleton-highlight: #f0f1f2;
+	--feature-card-bg: #f0f9f4;
+	--feature-card-border: #bbf7d0;
+}
+
+[data-theme="dark"] {
+	--primary-color: white;
+	--secondary-color: #E5E4E2;
+	--accent-color: #4ade80;
+	--accent-button-color: #166534;
+	--font-color: white;
+	--bg-color: #0a0a0a;
+	--hero-bg-color: #0d1a12;
+	--heading-color: #0a0a0a;
+	--footer-color: white;
+	--footer-bg-color: #14532d;
+	--footer-social-color: black;
+	--footer-social-circle-color: #166534;
+	--pagination-button-bg-color: #166534;
+	--skeleton-base: #1e1e1e;
+	--skeleton-highlight: #2a2a2a;
+	--feature-card-bg: #0d1a12;
+	--feature-card-border: #166534;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: $font;
+	line-height: 1;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 2rem; }
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 2rem;
+	background-color: var(--hero-bg-color);
+}
+
+a:link,
+a:hover,
+a:visited,
+a:active {
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+$drop-shadow: drop-shadow(0px 5px 10px rgba(#000, 0.1)) drop-shadow(0px 1px 1px rgba(#000, 0.2));
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@mixin media-query($device) {
+	@media screen and (max-width: $device) {
+		@content;
+	}
+}

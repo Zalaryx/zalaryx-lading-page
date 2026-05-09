@@ -1,0 +1,18 @@
+@keyframes skeleton-pulse {
+    0%, 100% { background-color: var(--skeleton-base); }
+    50% { background-color: var(--skeleton-highlight); }
+}
+
+.markdown-body img {
+    background-color: var(--skeleton-base);
+    width: 100%;
+    height: auto;
+
+    &.img-loading { opacity: 0; }
+    &.img-loaded { animation: fade-in 0.5s ease-in-out; }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

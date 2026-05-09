@@ -1,0 +1,65 @@
+# Site
+title: Zalaryx
+description: Know your real take-home pay. Salary and tax calculations for employees and freelancers across 9 countries.
+url: https://zalaryx.com
+
+# Page title
+page_title: Zalaryx
+
+# App Info
+ios_app_id                                :                                           # Set when available on the App Store
+ios_app_country                           : us
+
+appstore_link                             :                                           # Set when available on the App Store
+playstore_link                            :
+
+app_icon                                  : assets/images/icon.png
+app_name                                  : Zalaryx
+app_price                                 :
+app_description                           : Know your real take-home pay.
+
+enable_smart_app_banner                   : false
+
+
+# Information About Yourself
+your_name                                 : Zalaryx
+your_link                                 :
+your_city                                 : Spain
+email_address                             : support@zalaryx.com
+
+
+# Theme Settings
+link_color                                : "#16a34a"
+
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+
+# Google Tag
+google-tag                                :                                           # Set when available
+
+
+####################################################
+### Jekyll Configuration. No need to touch this. ###
+####################################################
+
+sass:
+  style: compressed
+  sass_dir: /assets/css/_sass
+
+exclude:
+  - LICENSE
+  - README.md
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+markdown: kramdown

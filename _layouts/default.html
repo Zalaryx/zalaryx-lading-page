@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body>
+    {% include_cached header.html %}
+    <main class="mainPageContainer">
+        <div class="appInfo">
+            <div class="appDescriptionContainer">
+                <p class="appDescription">
+                    {{ site.app_description }}
+                </p>
+            </div>
+            <div class="appSloganContainer">
+                <p class="appSlogan">
+                    Salary and tax calculations for employees and freelancers across 9 countries.
+                </p>
+            </div>
+            {% if site.appstore_link %}
+            <div class="downloadButtonsContainer">
+                <a class="appStoreLink" href="{{site.appstore_link}}">
+                    <img class="appStoreQR" src="assets/images/appstoreQR.webp" alt="Zalaryx on the App Store">
+                </a>
+            </div>
+            {% else %}
+            <div class="comingSoonContainer">
+                <p class="comingSoon">Coming soon to the App Store</p>
+            </div>
+            {% endif %}
+        </div>
+    </main>
+    {% include features.html %}
+    {% include_cached footer.html %}
+    {% if jekyll.environment != 'development' %}
+    {% include cookie-consent.html %}
+    {% endif %}
+    <script defer src="/assets/js/darkmode.js"></script>
+</body>
+
+</html>
