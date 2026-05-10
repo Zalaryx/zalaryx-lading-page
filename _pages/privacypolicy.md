@@ -6,7 +6,7 @@ sitemap: false
 ---
 
 **Last updated**
-May 9 2025
+May 10 2026
 
 # Privacy Policy
 
