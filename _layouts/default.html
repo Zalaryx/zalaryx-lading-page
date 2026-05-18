@@ -17,17 +17,17 @@
                     Salary and tax calculations for employees and freelancers across 9 countries.
                 </p>
             </div>
-            {% if site.appstore_link %}
             <div class="downloadButtonsContainer">
+                {% if site.appstore_link %}
                 <a class="appStoreLink" href="{{site.appstore_link}}">
-                    <img class="appStoreQR" src="assets/images/appstoreQR.webp" alt="Zalaryx on the App Store">
+                    <img class="img-fluid theme-image appStore" data-light="/assets/images/light/appstore_black.svg"
+                        data-dark="/assets/images/dark/appstore_white.svg" src="/assets/images/light/appstore_black.svg"
+                        id="appStoreDownload" alt="Download on the App Store" />
                 </a>
-            </div>
-            {% else %}
-            <div class="comingSoonContainer">
+                {% else %}
                 <p class="comingSoon">Coming soon to the App Store</p>
+                {% endif %}
             </div>
-            {% endif %}
         </div>
     </main>
     {% include features.html %}

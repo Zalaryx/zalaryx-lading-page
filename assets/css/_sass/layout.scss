@@ -266,6 +266,16 @@ input:checked + .slider:before {
 }
 
 
+.downloadButtonsContainer {
+	display: inline-block;
+	margin-top: 40px;
+}
+
+.appStore {
+	height: 70px;
+}
+
+
 // Features
 
 .features {
