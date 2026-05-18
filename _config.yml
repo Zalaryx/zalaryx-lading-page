@@ -7,10 +7,10 @@ url: https://zalaryx.com
 page_title: Zalaryx
 
 # App Info
-ios_app_id                                :                                           # Set when available on the App Store
+ios_app_id                                : 6767883921
 ios_app_country                           : us
 
-appstore_link                             :                                           # Set when available on the App Store
+appstore_link                             : https://apps.apple.com/bg/app/zalaryx/id6767883921
 playstore_link                            :
 
 app_icon                                  : assets/images/icon.png
@@ -18,7 +18,7 @@ app_name                                  : Zalaryx
 app_price                                 :
 app_description                           : Know your real take-home pay.
 
-enable_smart_app_banner                   : false
+enable_smart_app_banner                   : true
 
 
 # Information About Yourself
